@@ -73,12 +73,81 @@
 // console.log("array:", arr);
 
 // 6
-let numbers = [];
-for (let i = 0; i < 10; i++) {
-  numbers.push(Math.floor(Math.random() * 10));
-}
-numbers.push for (let i = 0; i < 10; i++) {
-  numbers.push(Math.floor(Math.random() * 10));
-}
+// function sozniYig(count = 0, words = []) {
+//     if (count >= 6) {
+//       return words;
+//     }
+  
+//     const word = prompt(`Iltimos, ${count + 1}-so'zni kiriting:`);
+//     if (word) {
+//       words.push(word);
+//     } else {
+//      console.log("Qaytadan urinib ko'ring.");
+//     }
+  
+//     return sozniYig(words.length, words);
+//   }
+  
+//   // Misol uchun chaqirish:
+//   const result = sozniYig();
+//   console.log("so'zlar:", result);
 
-console.log (numbers);
+// vazifa1
+// 1
+// function sonniqoshish() {
+//     let a = prompt("1-sonni kiriting");
+//     let b = prompt("2-sonni kiriting");
+
+//     let yigindi = a+b;
+//     console.log("Yig'indi: " + yigindi)
+//     return yigindi;
+// }
+// sonniqoshish();
+
+// 2
+// function addNumbers(a,b){
+// console.log(a+b);
+// }
+// addNumbers (5,2)
+
+
+// 3
+// function Musbatlar(arr) {
+//     let natija = [];
+  
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] > 0) {
+//         natija.push(arr[i]);
+//       }
+//     }
+  
+//     return natija;
+//   }
+  
+//   let a = [-3, 5, 0, -1, 8];
+//   let musbatlar = Musbatlar(a);
+//   console.log(musbatlar);
+  
+// 4
+const personA = [
+{
+    name: "Abdulloh",
+    age: 19,
+    status: false
+},
+{
+    name: "ibrohim",
+    age: 20,
+    status: true
+},
+{
+    name: "shodiyor",
+    age: 18,
+    status: false
+}
+];
+for (let i = 0; i < personA.length; i++) {
+    if (personA[i].status === false) {
+      console.log(personA[i].name);
+    }
+  }
