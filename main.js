@@ -128,26 +128,41 @@
 //   let musbatlar = Musbatlar(a);
 //   console.log(musbatlar);
   
-// 4
-const personA = [
-{
-    name: "Abdulloh",
-    age: 19,
-    status: false
-},
-{
-    name: "ibrohim",
-    age: 20,
-    status: true
-},
-{
-    name: "shodiyor",
-    age: 18,
-    status: false
-}
-];
-for (let i = 0; i < personA.length; i++) {
-    if (personA[i].status === false) {
-      console.log(personA[i].name);
+// 5
+// const personA = [
+// {
+//     name: "Abdulloh",
+//     age: 19,
+//     status: false
+// },
+// {
+//     name: "ibrohim",
+//     age: 20,
+//     status: true
+// },
+// {
+//     name: "shodiyor",
+//     age: 18,
+//     status: false
+// }
+// ];
+// for (let i = 0; i < personA.length; i++) {
+//     if (personA[i].status === false) {
+//       console.log(personA[i].name);
+//     }
+//   }
+
+// 6
+
+function ortaArifmetikWhile(arr) {
+    let toplam = 0;
+    let i = 0;
+    while (i < arr.length) {
+        toplam += arr[i];  //toplam=toplam+arr[i]
+        i++;
     }
-  }
+    return arr.length > 0 ? toplam / arr.length : 0;
+}
+let arr = [1, 2, 3, 4, 5];
+
+console.log(ortaArifmetikWhile(arr));
